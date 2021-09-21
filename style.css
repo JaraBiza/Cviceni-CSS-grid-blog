@@ -41,3 +41,27 @@ blockquote {
 }
 
 /* --------------------------------------------------- */
+.blog {
+	display:grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	}
+
+.blog>*{
+	grid-column: 2;
+}
+
+h1,h2,h3 {
+	grid-column: 2;
+}
+
+figure {
+	grid-template-columns: 1 / -1;
+}
+
+blockquote {
+	grid-template-columns: 1 / -1;	
+}
+.tip tip-vlevo{
+	grid-template-columns: 1;
+	background-color: gainsboro;
+}
